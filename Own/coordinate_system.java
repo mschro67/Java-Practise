@@ -12,8 +12,13 @@ public class coordinate_system{
     }
     public static void display(String[][] system){
         for (int x=system.length-1;x>=0;x--){
-            System.out.println(x+" "+Arrays.toString(system[x]));
+            if (x<10) {
+                System.out.println(x + "  " + Arrays.toString(system[x]));
+            }else{
+                System.out.println(x + " " + Arrays.toString(system[x]));
+            }
         }
+        System.out.print(" ");
         for (int x=0;x<system.length;x++){
             System.out.print("  "+x);
         }
@@ -43,7 +48,7 @@ public class coordinate_system{
         return system;
     }
     public static void main(String[] args){
-        String[][] system=point(line(def(11,11,"."),1,0,"@"),9,1,"X");
+        String[][] system=point(line(line(def(11,11,"."),-1,3,"@"),2,0,"/"),1,5,"X");
         display(system);
     }
 }
