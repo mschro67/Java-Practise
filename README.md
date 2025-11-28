@@ -1,1 +1,1 @@
-Here i practice my Java skills.
+Here I practice my Java skills.
