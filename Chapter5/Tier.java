@@ -5,7 +5,7 @@ package Chapter5;
 import java.util.Random;
 
 public class Tier{
-    Random r=new Random(0);
+    Random r=new Random(1);
 
     int alter=0;
     int ohneEssen=0;
